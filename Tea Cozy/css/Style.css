@@ -1,0 +1,236 @@
+/* Обнуление */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(12, 11, 11);
+  background-size: cover;
+  display: flex;
+  border-bottom: 1px solid seashell;
+  min-height: 69px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  /* flex-wrap: wrap; */
+  
+}
+.conteiner{
+  display: flex;  
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.main_cont{
+  top: 3.13em;
+  position: relative;
+  
+}
+.navigation{
+  width: 400px;
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+}
+a{
+  color: seashell;
+}
+.img-logo{
+  display: block;
+  height: 50px;
+  padding-left: 10px;
+  
+}
+.menu {
+padding-right: 10px;
+}
+.logo{
+  width: 30%;
+}
+.mission {
+  width: 100%;
+  max-height: 700px;
+  overflow: hidden;
+  justify-content: space-around;
+  position: relative;
+}
+
+.mission_img {
+  position: relative;
+  width: 96%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+.paragraph_centr {
+  width: 100%;
+  height: auto;
+  text-align:center;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 250px;
+  z-index: 4;
+  flex-wrap: wrap;
+}
+.central_text {
+  background-color: black;
+  width: 96%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.conteiner2 {
+margin: 10px auto;
+width: 96%;
+height: auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.firstimg{
+  padding: 25px 15px;
+  text-transform: capitalize;
+}
+.imege{
+  
+  max-width: 300px;
+  max-height: 200px;
+}
+.text_mon{
+  padding-top: 80px;
+}
+.text_mon h4{
+  padding-top: 15px;
+} 
+figcaption{
+  padding-top: 10px;
+}
+.location_wrap {
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.location {
+  background-image: url(../img/img-locations-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  position: relative;
+
+
+}
+.loc_box1, .loc_box2, .loc_box3{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  text-transform: capitalize;
+  margin: 20px 40px;
+  padding: 25px 0;
+  
+}
+.location p {
+  padding: 25px 0;
+}
+.location h2 {
+  display: inline;
+  position: absolute;
+  top: 50px;
+}
+footer {
+width:100%;
+min-height: 200px;
+padding: 15px 0;
+}
+
+
+footer h2 {
+  text-transform: capitalize;
+  padding:10px 0 20px 0;
+}
+footer p {
+  text-align: left;
+  line-height: 1;
+  text-transform: capitalize;
+}
+.cont {
+  line-height: 2.5;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .paragraph_centr {
+  top: 200px;
+  font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 620px){
+  .paragraph_centr {
+  top: 100px;
+  font-size: 12px;
+}
+.navigation { 
+display: none;
+}
+.img-logo{
+  max-height: 40px;
+}
+
+}
+@media only screen and (max-width: 425px){ 
+.paragraph_centr {
+  display: none;
+}
+
+  .mission_img{
+    width: 100%;
+  }
+  body{
+    font-size: 18px;
+  }
+  .location {
+    width: 100%;
+    flex-shrink: 1;
+  }
+}
+@media only screen and (max-width: 1187px){
+  .location h2 {
+    top: 8px;
+  }
+
+}
+
+@media only screen and (min-width: 1350px) {
+  .mission {
+    width: 100%;
+    max-height: 1300px;
+  }
+
+}
